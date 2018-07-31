@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ecf0f1;
+}
+
+/*Header Styles*/
+header {
+    text-align: center;
+    margin: 80px auto 25px;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: 300;
+    color: #2c3e50;
+}
+
+header h1 span {
+    font-weight: 700;
+}
+
+header h2 {
+    color: #bdc3c7;
+    font-weight: 300;
+}
+
+/*Section.Form Styles*/
+.form {
+    width: 800px;
+    margin: 50px auto 20px;
+}
+
+#todoInput {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #34495e;
+    background: none;
+    outline: none;
+    font: 300 28px "Unbuntu", sans-serif;
+    color: #34495e;
+}
+
+/*List Styles*/
+.list {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.task {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: #34495e;
+    line-height: 60px;
+    padding: 0 20px;
+    transition: all .3s ease;
+}
+
+.task:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+li span {
+    float: right;
+    color: #c0392b;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.task:hover span {
+    opacity: 1;
+}
+
+li span:hover {
+    color: #e74c3c;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #bdc3c7;
+}
